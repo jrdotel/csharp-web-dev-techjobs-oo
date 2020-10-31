@@ -12,7 +12,17 @@ namespace TechJobsOO
         public PositionType JobType { get; set; }
         public CoreCompetency JobCoreCompetency { get; set; }
 
-        // TODO: Add the two necessary constructors.
+        public Job()
+        {
+            Id = nextId;
+            nextId++;
+        }
+
+        public Job(string value) : this()
+        {
+            Value = value;
+        }
+
 
         // TODO: Generate Equals() and GetHashCode() methods.
     }
