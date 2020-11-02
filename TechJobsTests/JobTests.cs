@@ -7,12 +7,12 @@ namespace TechJobsTests
     public class JobTests
     {
         [TestMethod]
-        public void TestSettingJobId_IDsDifferByOne_ReturnsTrue()
+        public void TestJobsForIncrement()
         {
             var job1 = new Job();
             var job2 = new Job();
 
-            Assert.AreEqual(job1.Id, job2.Id, 1);
+            Assert.IsTrue(job2.Id - job1.Id == 1);
         }
 
         [TestMethod]
@@ -104,5 +104,6 @@ namespace TechJobsTests
 
             Assert.AreEqual(testString, job1.ToString());
         }
+
     }
 }
