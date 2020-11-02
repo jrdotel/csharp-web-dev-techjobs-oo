@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace TechJobsOO
- 
+
 {
     public class Job
     {
